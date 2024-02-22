@@ -1,0 +1,81 @@
+.education {
+    /* padding: 0 0 50px 0; */
+    position: relative;
+    background-color: white;
+    background-image: url('../../assets/img/Group.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.education-bx .direction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.education-bx {
+    flex-direction: row;
+    background: rbg(53, 61, 219, 0.24);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -30px;
+    border-width: 2px solid white;
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.education h2 {
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 8vh;
+    color: #4275FA;
+}
+
+
+.education p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+
+.education-slider {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.education-slider .item h5 {
+    border-width: 1px solid white;
+}
+
+.education-slider .item img {
+    width: 60%;
+    margin: 0 auto 15px auto;
+
+}
+
+@media (max-width: 768px) {
+    .education-bx .direction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education-bx {
+        background-color: white;
+        height: 750px;
+    }
+}
+
+.globe {
+    margin: 40px;
+}

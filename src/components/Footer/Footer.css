@@ -1,0 +1,35 @@
+.footer {
+    padding: 0 0 50px 0;
+    /* background-image: url('./assets/img/Data.jpg'); */
+    background-color: rgba(66, 117, 250, 1);
+    /* background: linear-gradient(90.21deg, rgba(2, 17, 12, 0.5) -5.91%, rgba(1, 77, 68, 0.5) 111.58%); */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .social-icon {
+    width: 4%;
+  } */
+
+.footer img {
+    width: 12%;
+}
+
+
+.icon img {
+    width: 4%;
+    margin-right: 2%;
+}
+
+.icon {
+    margin-top: 15px;
+}
+
+.footer p {
+    font-weight: 600;
+    font-size: 16px;
+    color: "white";
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
