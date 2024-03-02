@@ -1,0 +1,36 @@
+.experience {
+    background-color: white;
+    position: relative;
+    background: url('../../assets/img/Ellipse2.svg');
+    background-repeat: no-repeat;
+}
+
+.experience h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    color: #4275FA;
+    margin: 40px;
+}
+
+.experience h4 {
+    font-weight: 700;
+    margin: 8px;
+    /* color: (229, 85, 78, 0.3); */
+}
+
+.experience h5 {
+    color: rgba(229, 85, 78, 0.9);
+    margin: 8px;
+}
+
+.experience p {
+    margin-left: 8px;
+    text-align: justify;
+}
+
+@media (max-width:768px) {
+    .experience h2 {
+        font-size: 30px;
+    }
+}

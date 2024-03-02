@@ -2,6 +2,13 @@
     padding: 80px 0;
     position: relative;
     background-color: white;
+
+}
+
+.project .card-box {
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
 }
 
 .project h2 {
@@ -93,6 +100,10 @@
     object-fit: scale-down;
 }
 
+.proj-imgbx p {
+    color: black;
+}
+
 .proj-imgbx::before {
     content: "";
     background: linear-gradient(90.21deg, rgba(41, 75, 161, 0.5) -5.91%, rgba(66, 117, 250, 0.8) 111.58%);
@@ -151,4 +162,18 @@
     width: 35%;
     right: 0;
     z-index: -4;
+}
+
+@media (max-width:768px) {
+    .project h2 {
+        font-size: 30px;
+    }
+
+    .project p {
+        font-size: 15px;
+    }
+
+    .project .nav.nav-pills .nav-link {
+        font-size: 14px;
+    }
 }

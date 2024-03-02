@@ -1,7 +1,16 @@
 .main-contact {
     background: white;
+    justify-content: center;
+    display: flex;
+    background-image: url('../../assets/img/Ellipse.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20%;
+    backdrop-filter: blur(7.5px);
+
 
 }
+
 
 .main-contact h2 {
     color: #4275FA;
@@ -14,8 +23,13 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    margin: 50px;
+    /* margin: 50px;  */
     padding: auto;
+}
+
+.main-contact .card-form {
+    margin: 20px;
+    display: flex;
 }
 
 .contact-info .icon {
@@ -37,14 +51,12 @@
 }
 
 .contact {
-    /* padding: 20px; */
-    background-color: white;
-    backdrop-filter: blur(7.5px);
     margin: 0;
-    background-image: url('../../assets/img/Ellipse.svg');
     background-repeat: no-repeat;
     background-position: right;
     background-size: 17%;
+    width: auto;
+
 }
 
 .contact div {
@@ -142,12 +154,12 @@
 .main-contact .image-container {
     margin-bottom: 10px;
     height: 470px;
-    width: 600px;
+    width: 100%;
     background-image: url('../../assets/img/bgcontact.svg');
     background-repeat: no-repeat;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px;
 }
 
 .main-contact .image-container .info-contain {
@@ -232,9 +244,37 @@
         text-align: center;
     }
 
-    .image-container {
-        width: 200px;
-        height: 400px;
+    .main-contact h2 {
+        font-size: 30px;
+    }
 
+    .main-contact .image-container {
+        width: 350px;
+        height: 400px;
+    }
+
+    .main-contact .image-container .info-contain {
+        font-size: small;
+    }
+
+    .info-contain .social-icon {
+        display: inline-block;
+        margin: 0px;
+    }
+
+    .main-contact .card-form input {
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main-contact .card-form textarea {
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main-contact .card-form button {
+        margin: 10px;
     }
 }

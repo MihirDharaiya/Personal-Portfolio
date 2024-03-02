@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../../assets/img/lapp.svg";
 import TrackVisibility from 'react-on-screen';
-import { Navigate, useNavigate } from 'react-router-dom';
 import '../Banner/Banner.css';
 
 export const Banner = () => {
@@ -14,12 +13,22 @@ export const Banner = () => {
     const toRotate = ["Data Analyst"];
     const period = 2000;
 
-    // const navigate = useNavigate();
+    const onDownloadClick = () => {
+        // Replace 'your-pdf-url.pdf' with the actual URL of your PDF file
+        const pdfUrl = 'https://drive.google.com/file/d/1dTEsyDbN34PdsRPmE1wYVHd7Y6chdGCW/view?usp=drive_link';
 
-    // const redirectToPDF = () => {
-    //     const pdfPath = '../assets/MihirDharaiya_23.pdf';
-    //     navigate(pdfPath);
-    // };
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = `MihirDharaiya_Resume.pdf`;
+
+        // Append the link to the document and trigger the click event
+        document.body.appendChild(link);
+        link.click();
+
+        // Remove the link from the document
+        document.body.removeChild(link);
+    };
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -66,7 +75,7 @@ export const Banner = () => {
                                     <p>
                                         Data enthusiast skilled in statistical analysis, data visualization, and machine learning.
                                     </p>
-                                    <button className="vvd2"><span>Get Resume</span></button>
+                                    <button className="vvd2" onClick={onDownloadClick}><span>Get Resume</span></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>

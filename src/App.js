@@ -10,6 +10,8 @@ import { Footer } from './components/Footer/Footer.js';
 import { About } from './components/About/About.js';
 import { Globe } from './components/Globe/Globe.js';
 import { Card } from './components/Card/Card.js';
+import { Experience } from './components/Experience/Experience.js';
+import { Achievements } from './components/Achievements/Achievements.js';
 
 const App = () => {
   return (
@@ -19,8 +21,10 @@ const App = () => {
       <Banner />
       <About />
       <Skills />
+      <Experience />
       <Projects />
       <Education />
+      <Achievements />
       <Contact />
       <Footer />
       {/* <Card /> */}

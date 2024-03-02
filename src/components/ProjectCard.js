@@ -1,23 +1,36 @@
 import { Col } from "react-bootstrap";
 import { useCollapse } from 'react-collapsed'
 import { useState } from "react";
+import { Popper } from '@mui/base/Popper';
+import '../components/Projects/Projects.css';
+export const ProjectCard = ({ title, description, imgUrl, popper }) => {
+    const [anchorEl, setAnchorEl] = useState(null);
 
-export const ProjectCard = ({ title, description, imgUrl, link }) => {
-    const [isExpanded, setExpanded] = useState(false)
-    const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
+    const handleClick = (event) => {
+        setAnchorEl(anchorEl ? null : event.currentTarget);
+    };
+
+    const open = Boolean(anchorEl);
+    const id = open ? 'simple-popper' : undefined;
     return (
         <Col size={12} sm={6} md={6}>
             <div className="proj-imgbx">
                 <img src={imgUrl} />
                 <div
-                    {...getToggleProps({
-                        onClick: () => setExpanded((prevExpanded) => !prevExpanded),
-                    })}
+                    // {...getToggleProps({
+                    //     onClick: () => setExpanded((prevExpanded) => !prevExpanded),
+                    // })}
+                    // {...getCollapseProps()}
+                    onClick={handleClick}
                     className="proj-txtx">
                     <h4>{title}</h4>
                     <span>{description}</span>
                 </div>
-                <section {...getCollapseProps()}>Collapsed content 🙈</section>
+                <section>
+                    <Popper id={id} open={open} anchorEl={anchorEl}>
+                        <p>{popper}</p>
+                    </Popper>
+                </section>
             </div>
         </Col>
     )

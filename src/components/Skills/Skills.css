@@ -50,6 +50,16 @@
 } */
 
 /* New Design */
+
+.main-container h2 {
+    font-size: 45px;
+    font-weight: 700;
+    /* margin-bottom: 6%; */
+    color: rgba(66, 117, 250, 1);
+    margin: 80px;
+    text-align: center;
+}
+
 .skill {
     padding: 0 0 50px 0;
     position: relative;
@@ -61,25 +71,23 @@
 }
 
 .skill-bx {
-    background: rbg(53, 61, 219, 0.24);
-    /* background: rgba(66, 117, 250, 0.8); */
+    background: rbga(53, 61, 219, 0.24);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    /* backdrop-filter: blur(4px); */
     -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border-radius: 64px;
+    border-radius: 35px;
     text-align: center;
-    padding: 60px 50px;
-    margin-top: -60px;
+    padding: 30px 30px;
+    margin-top: -40px;
     /* backdrop-filter: blur(7.5px); */
 }
 
-.skill h2 {
+#h2 {
     font-size: 45px;
     font-weight: 700;
-    margin-bottom: 6%;
+    /* margin-bottom: 6%; */
     color: rgba(66, 117, 250, 1);
-    ;
+    margin-left: 80px;
+    text-align: left;
 }
 
 .skill h5 {
@@ -98,14 +106,15 @@
 }
 
 .skill-slider {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
 
+.skill-slider .item {}
 
 .skill-slider .item img {
-    width: 50%;
+    width: 40%;
     margin: 0 auto 15px auto;
 }
 
@@ -118,11 +127,22 @@
 }
 
 .react-multi-carousel-arrow-left {
-    left: 30px;
+    /* left: 30px; */
     /* Adjust the left position */
 }
 
 .react-multi-carousel-arrow-right {
-    right: 30px;
+    /* right: 30px; */
     /* Adjust the right position */
+}
+
+@media (max-width:768px) {
+    .skill h2 {
+        font-size: 30px;
+    }
+
+    .skill-slider .item img {
+        width: 50;
+        height: 80;
+    }
 }

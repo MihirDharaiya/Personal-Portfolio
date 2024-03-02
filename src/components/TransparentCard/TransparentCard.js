@@ -7,7 +7,7 @@ const TransparentCard = ({ image, title, course, grad, cgpa }) => {
             <h5>{grad}</h5>
             <img src={image} alt='/' />
             <h3>{title}</h3>
-            <h4>{course}</h4>
+            <h5>{course}</h5>
             <h6>{cgpa}</h6>
         </div>
     );
