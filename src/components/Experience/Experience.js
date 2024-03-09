@@ -4,6 +4,8 @@ import 'react-vertical-timeline-component/style.min.css';
 // import indus from "../../assets/img/indus.webp.png";
 import codingNinjas from "../../assets/img/CodingNinjas.png";
 import '../Experience/Experience.css'
+import { IndusIcon } from "../IndusIcon";
+import { CodingNinjasIcon } from "../CodingNinjasIcon";
 
 export const Experience = () => {
     return (
@@ -25,15 +27,14 @@ export const Experience = () => {
                         contentArrowStyle={{ borderRight: '7px solid  rbga(53, 61, 219, 0.24)' }}
                         date="Jun 2022 - Aug 2022"
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    // icon={ }
+                        icon={<IndusIcon />}
                     >
                         <h4 className="vertical-timeline-element-title">Software Developer Intern</h4>
                         <h5 className="vertical-timeline-element-subtitle">Indus University</h5>
                         <p>
-                            -Creator-IT serves as a platform for optimizing SEO and providing recommendations tailored to YouTubers, Instagram creators, and creators on various other platforms.                            <br />
+                            -Creator-IT functions as a platform designed to enhance SEO and offer personalized suggestions for individuals on YouTube, Instagram, and other diverse creator platforms.                            <br />
                             <br />
-                            -Project's objective was to suggest catchy titles, thumbnails, and Hashtags to increase engagement from 5 - 10% to 25 - 30%.
-                        </p>
+                            -The project aimed to propose captivating titles, thumbnails, and hashtags with the goal of elevating engagement rates from 5-10% to 25-30%.                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -45,20 +46,16 @@ export const Experience = () => {
                         }}
                         contentArrowStyle={{ borderRight: '7px solid  rbga(53, 61, 219, 0.24)' }}
                         date="Sep 2021 - Jan 2022"
-                        iconStyle={{ alignItems: 'center', background: 'white' }}
-                        icon={
-                            <div style={{ justifyContent: 'center', alignItems: 'center' }}>
-                                <img src={codingNinjas} alt="CN" style={{ width: "70%" }} />
-                            </div>}
+                        iconStyle={{ alignItems: 'center', background: 'white', justifyContent: 'center' }}
+                        icon={<CodingNinjasIcon />}
                     >
                         <h4 className="vertical-timeline-element-title">Teaching Assistant</h4>
                         <h5 className="vertical-timeline-element-subtitle">Coding Ninjas</h5>
                         <p>
-                            -Mentored students and solved more than 500+ doubts with rating of 4.7 aggregate.
+                            -Mentored students, resolving 500+ queries with a 4.7 rating.
                             <br />
                             <br />
-                            -Handled scenarios associated with debugging, optimising code, improving time complexity, and explaining approach.
-
+                            -Managed situations involving debugging, code optimization, enhanced time complexity, and elucidated approaches.
 
                         </p>
                     </VerticalTimelineElement>

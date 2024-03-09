@@ -220,6 +220,10 @@
 }
 
 @media (max-width:768px) {
+    .main-contact {
+        margin-left: 12px;
+    }
+
     .contact-info {
         display: flex;
         flex-direction: column;
@@ -276,5 +280,10 @@
 
     .main-contact .card-form button {
         margin: 10px;
+    }
+
+    .social-icon a {
+        height: 32px;
+        width: 32px;
     }
 }

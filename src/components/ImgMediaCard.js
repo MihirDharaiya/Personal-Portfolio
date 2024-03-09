@@ -11,23 +11,24 @@ export default function ImgMediaCard({ title, imgUrl, description }) {
         <Card sx={{ maxWidth: 600, marginLeft: "15px", borderRadius: "10px" }}>
             <CardMedia
                 component="img"
-                alt="green iguana"
                 height="100"
                 image={imgUrl}
                 borderRadius="10px"
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div" fontWeight="700" color="#4275FA" >
+                {/* <Typography gutterBottom variant="h6" component="div" fontWeight="700" color="#4275FA">
                     {title}
-                </Typography>
+                </Typography> */}
+                <h5 style={{ textAlign: 'center' }}>{title}</h5>
                 <div style={{ margin: "5%" }}>
-                    <Typography variant="body2" color="text.secondary">
+                    {/* <Typography variant="body2" color="text.secondary">
                         {description}
-                    </Typography>
+                    </Typography> */}
+                    <p>{description}</p>
                 </div>
             </CardContent>
             <CardActions>
-                <Button size='large'>Link</Button>
+                {/* <Button size='large'>Link</Button> */}
             </CardActions>
         </Card>
     );

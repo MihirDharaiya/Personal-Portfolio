@@ -25,7 +25,7 @@ export const Projects = () => {
     const projects = [
         {
             title: "Student-Faculty Interaction Portal (IndusUniApp)",
-            description: "Walmart Sales Analysis",
+            description: "-Mentored students, resolving 500+ queries with a 4.7 rating.            ",
             imgUrl: projImg1,
         },
         {
