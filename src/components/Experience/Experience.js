@@ -1,8 +1,6 @@
 import { Container } from "react-bootstrap";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-// import indus from "../../assets/img/indus.webp.png";
-import codingNinjas from "../../assets/img/CodingNinjas.png";
 import '../Experience/Experience.css'
 import { IndusIcon } from "../IndusIcon";
 import { CodingNinjasIcon } from "../CodingNinjasIcon";

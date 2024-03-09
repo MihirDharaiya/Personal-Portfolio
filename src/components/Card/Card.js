@@ -1,5 +1,4 @@
 import React from "react";
-import google from "../../assets/img/google.png";
 
 export const Card = ({ title, description, imgUrl, link }) => {
     return (

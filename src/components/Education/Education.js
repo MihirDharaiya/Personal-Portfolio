@@ -1,5 +1,5 @@
 import north from "../../assets/img/Northeastern.png";
-import indus from "../../assets/img/Indus.png";
+import indus from "../../assets/img/indus.png";
 import 'react-multi-carousel/lib/styles.css';
 import TransparentCard from "../TransparentCard/TransparentCard";
 import globe from "../../assets/img/Globe2.svg";

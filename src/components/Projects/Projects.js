@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import projImg1 from "../../assets/img/indusuniapp.png";
 import projImg2 from "../../assets/img/D2.jpg";
@@ -12,7 +12,6 @@ import colorSharp2 from "../../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import '../Projects/Projects.css'
-import ImgMediaCard from '../ImgMediaCard';
 import MediaCard from '../MediaCard';
 
 export const Projects = () => {

@@ -1,5 +1,4 @@
 import { Col } from "react-bootstrap";
-import { useCollapse } from 'react-collapsed'
 import { useState } from "react";
 import { Popper } from '@mui/base/Popper';
 import '../components/Projects/Projects.css';
@@ -17,10 +16,6 @@ export const ProjectCard = ({ title, description, imgUrl, popper }) => {
             <div className="proj-imgbx">
                 <img src={imgUrl} />
                 <div
-                    // {...getToggleProps({
-                    //     onClick: () => setExpanded((prevExpanded) => !prevExpanded),
-                    // })}
-                    // {...getCollapseProps()}
                     onClick={handleClick}
                     className="proj-txtx">
                     <h4>{title}</h4>

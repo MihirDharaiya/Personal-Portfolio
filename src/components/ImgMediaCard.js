@@ -3,8 +3,6 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 
 export default function ImgMediaCard({ title, imgUrl, description }) {
@@ -17,20 +15,13 @@ export default function ImgMediaCard({ title, imgUrl, description }) {
                 borderRadius="10px"
             />
             <CardContent>
-                {/* <Typography gutterBottom variant="h6" component="div" fontWeight="700" color="#4275FA">
-                    {title}
-                </Typography> */}
                 <h5 style={{ textAlign: 'center' }}>{title}</h5>
                 <div style={{ margin: "5%" }}>
-                    {/* <Typography variant="body2" color="text.secondary">
-                        {description}
-                    </Typography> */}
                     <p>{description}</p>
                 </div>
             </CardContent>
             <CardActions>
                 <NewspaperIcon /* onClick={Whatever} */ />
-                {/* <Button size='large'>Link</Button> */}
             </CardActions>
         </Card>
     );
