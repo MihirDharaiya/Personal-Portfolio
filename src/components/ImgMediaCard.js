@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
 
 export default function ImgMediaCard({ title, imgUrl, description }) {
     return (
@@ -28,6 +29,7 @@ export default function ImgMediaCard({ title, imgUrl, description }) {
                 </div>
             </CardContent>
             <CardActions>
+                <NewspaperIcon /* onClick={Whatever} */ />
                 {/* <Button size='large'>Link</Button> */}
             </CardActions>
         </Card>

@@ -13,6 +13,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import '../Projects/Projects.css'
 import ImgMediaCard from '../ImgMediaCard';
+import MediaCard from '../MediaCard';
 
 export const Projects = () => {
     // const history = useHistory();
@@ -48,31 +49,31 @@ export const Projects = () => {
 
     const certifications = [
         {
-            title: "License/Certification",
-            description: "Microsoft: Power BI Data Analyst Associate",
+            title: "Microsoft",
+            description: "Power BI Data Analyst Associate",
             imgUrl: pl300,
             link: "https://learn.microsoft.com/en-us/users/mihirdharaiya-5742/credentials/certification/data-analyst-associate?tab=credentials-tab"
         },
         {
-            title: "Professional Certificate",
+            title: "Google",
             description: "Google Data Analytics",
             imgUrl: google,
             link: "https://www.coursera.org/account/accomplishments/professional-cert/N59F8ZVJFUVR"
         },
         {
-            title: "Certificate",
-            description: "Data Analyst Track",
+            title: "DataCamp",
+            description: "Data Analyst in Power BI",
             imgUrl: Datacamp1,
             link: "https://www.datacamp.com/completed/statement-of-accomplishment/track/5508fcb1201a9e972ca3860c274f9bc12b842b13"
         },
         {
-            title: "Certificate",
+            title: "DataCamp",
             description: "Introduction to R",
             imgUrl: Datacamp2,
             link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/a88ab67cfc600f069bdde176cac62c5495658b0f"
         },
         {
-            title: "Certificate",
+            title: "DataCamp",
             description: "Intermediate R",
             imgUrl: Datacamp3,
             link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/4a2eea5342413daaeb48834c42e3f5912e055772"
@@ -103,7 +104,8 @@ export const Projects = () => {
                                                 <Row className="justify-content-center" style={{ alignItems: 'center', display: 'flex' }}>
                                                     {projects.map((cards, index) => (
                                                         <Col md={6} lg={6} key={index} className="mb-4">
-                                                            <ImgMediaCard {...cards} />
+                                                            <MediaCard {...cards} />{/* <ImgMediaCard {...cards} /> */}
+                                                            {/* <ImgMediaCard {...cards} /> */}
                                                         </Col>
                                                     ))}
                                                 </Row>
@@ -112,7 +114,7 @@ export const Projects = () => {
                                                 <Row className="justify-content-center">
                                                     {certifications.map((cards, index) => (
                                                         <Col md={6} lg={6} key={index} className="mb-4">
-                                                            <ImgMediaCard {...cards} />
+                                                            <MediaCard {...cards} />{/* <ImgMediaCard {...cards} /> */}
                                                         </Col>
                                                     ))}
                                                 </Row>
