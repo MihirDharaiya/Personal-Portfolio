@@ -79,6 +79,13 @@
         background: rgba(229, 85, 78, 0.3);
         height: 600px;
     }
+
+    .globe {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 .globe {

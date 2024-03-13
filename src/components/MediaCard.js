@@ -22,15 +22,18 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-export default function MediaCard({ title, imgUrl, description }) {
+export default function MediaCard({ title, imgUrl, description, urlLink }) {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
+    const openInNewTab = (url) => {
+        window.open(url, "_blank", "noreferrer");
+    };
 
     return (
-        <Card sx={{ maxWidth: 600, marginLeft: "15px", borderRadius: "10px" }}>
+        <Card sx={{ maxWidth: 400, margin: "15px", borderRadius: "10px", boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.25)" }}>
             <CardHeader
                 style={{ textAlign: "center", color: "rgba(66, 117, 250, 1)" }}
                 title={title}
@@ -38,16 +41,16 @@ export default function MediaCard({ title, imgUrl, description }) {
             />
             <CardMedia
                 component="img"
-                height="194"
+                style={{ width: "90%", borderRadius: "10px", margin: "20px" }}
                 image={imgUrl}
                 alt="Paella dish"
-                borderRadius="50px"
+            // borderRadius="50px"
             />
             <CardContent>
             </CardContent>
             <CardActions disableSpacing>
                 <IconButton aria-label="add to favorites">
-                    <NewspaperIcon />
+                    <NewspaperIcon style={{ color: "rgba(229, 85, 78, 1)" }} onClick={() => openInNewTab(urlLink)} />
                 </IconButton>
                 <ExpandMore
                     expand={expanded}
@@ -60,7 +63,7 @@ export default function MediaCard({ title, imgUrl, description }) {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography paragraph>
+                    <Typography paragraph width="100%">
                         {description}
                     </Typography>
                 </CardContent>

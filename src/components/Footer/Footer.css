@@ -33,3 +33,18 @@
     letter-spacing: 0.5px;
     margin-top: 20px;
 }
+
+@media (max-width:768px) {
+    .footer {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .footer img {
+        width: 12%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+}

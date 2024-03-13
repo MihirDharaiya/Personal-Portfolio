@@ -111,7 +111,6 @@
     position: relative;
 }
 
-.skill-slider .item {}
 
 .skill-slider .item img {
     width: 40%;
@@ -126,19 +125,9 @@
     z-index: -4;
 }
 
-.react-multi-carousel-arrow-left {
-    /* left: 30px; */
-    /* Adjust the left position */
-}
-
-.react-multi-carousel-arrow-right {
-    /* right: 30px; */
-    /* Adjust the right position */
-}
-
 @media (max-width:768px) {
     .skill h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .skill-slider .item img {
