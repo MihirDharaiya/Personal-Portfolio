@@ -10,6 +10,12 @@ nav.navbar {
 
 }
 
+nav.navbar img {
+    width: 100%;
+    height: auto;
+
+}
+
 /* nav.navbar.scrolled .navbar-text button {
     color: #3D1768;
 } */

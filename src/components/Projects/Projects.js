@@ -24,7 +24,12 @@ export const Projects = () => {
 
     const projects = [
         {
-            title: "Student-Faculty Interaction Portal (IndusUniApp)",
+            title: "Valorant Statistics",
+            description: "This project is focused on the analysis of the the Airbnb's Real Estate Listings dataset which is avaiable on kaggle.",
+            imgUrl: projImg3,
+        },
+        {
+            title: "IndusUniApp",
             description: "The project is dedicated to addressing students inquiries and enhancing transparency between faculty members and students. There has been an 80% reduction in resolution time. The applications involved are IndusAchiever, IndusFaculty, and AdminPortal.",
             imgUrl: indus,
         },
@@ -34,14 +39,19 @@ export const Projects = () => {
             imgUrl: creatorit,
         },
         {
-            title: "Airbnb Real Estate Listings Analysis",
-            description: "This project is focused on the analysis of the the Airbnb's Real Estate Listings dataset which is avaiable on kaggle.",
-            imgUrl: projImg3,
-        },
-        {
             title: "Dashboard",
             description: "Churn Analysis",
             imgUrl: projImg3,
+        },
+        {
+            title: "Creator-IT",
+            description: "Creator-IT is SEO optimisation and recommendation website for Youtubers, Instagram creators and other platforms creators. Helps content creators in generating video titles, hashtags and much more.",
+            imgUrl: creatorit,
+        },
+        {
+            title: "Creator-IT",
+            description: "Creator-IT is SEO optimisation and recommendation website for Youtubers, Instagram creators and other platforms creators. Helps content creators in generating video titles, hashtags and much more.",
+            imgUrl: creatorit,
         },
 
     ];
@@ -76,6 +86,12 @@ export const Projects = () => {
             description: "Intermediate R",
             imgUrl: Datacamp3,
             urlLink: "https://www.datacamp.com/completed/statement-of-accomplishment/course/4a2eea5342413daaeb48834c42e3f5912e055772"
+        },
+        {
+            title: "Google",
+            description: "Google Data Analytics",
+            imgUrl: google,
+            urlLink: "https://www.coursera.org/account/accomplishments/professional-cert/N59F8ZVJFUVR"
         },
 
     ];

@@ -8,7 +8,7 @@ import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import NewspaperIcon from '@mui/icons-material/Newspaper';
+import LaunchIcon from '@mui/icons-material/Launch';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const ExpandMore = styled((props) => {
@@ -37,20 +37,20 @@ export default function MediaCard({ title, imgUrl, description, urlLink }) {
             <CardHeader
                 style={{ textAlign: "center", color: "rgba(66, 117, 250, 1)" }}
                 title={title}
-            //subheader="September 14, 2016"
             />
             <CardMedia
                 component="img"
+                height="210"
                 style={{ width: "90%", borderRadius: "10px", margin: "20px" }}
                 image={imgUrl}
-                alt="Paella dish"
+                alt="i'm gay!"
             // borderRadius="50px"
             />
             <CardContent>
             </CardContent>
             <CardActions disableSpacing>
                 <IconButton aria-label="add to favorites">
-                    <NewspaperIcon style={{ color: "rgba(229, 85, 78, 1)" }} onClick={() => openInNewTab(urlLink)} />
+                    <LaunchIcon style={{ color: "rgba(229, 85, 78, 1)" }} onClick={() => openInNewTab(urlLink)} />
                 </IconButton>
                 <ExpandMore
                     expand={expanded}
