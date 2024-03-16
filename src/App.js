@@ -8,8 +8,6 @@ import { Education } from './components/Education/Education.js';
 import { Contact } from './components/Contact/Contact.js';
 import { Footer } from './components/Footer/Footer.js';
 import { About } from './components/About/About.js';
-import { Globe } from './components/Globe/Globe.js';
-import { Card } from './components/Card/Card.js';
 import { Experience } from './components/Experience/Experience.js';
 import { Achievements } from './components/Achievements/Achievements.js';
 
@@ -27,7 +25,6 @@ const App = () => {
       <Achievements />
       <Contact />
       <Footer />
-      {/* <Card /> */}
     </div>
 
   );
