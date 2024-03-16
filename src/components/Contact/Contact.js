@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import navIcon1 from "../../assets/img/message.svg";
@@ -12,24 +14,46 @@ import '../Contact/Contact.css';
 
 export const Contact = () => {
 
-const form = useRef();
+    const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const notify = () => {
+        toast.success('Message sent successfully!', {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            transition: Bounce,
+            });
+    };
 
-    emailjs
-      .sendForm('gmail_service', 'contact_me_form', form.current, {
-        publicKey: 'oUl30g-qhCSyzmY-x',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
+    // Disable this function while testing react-toastify
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('gmail_service', 'contactMeForm', form.current, {
+                publicKey: 'oUl30g-qhCSyzmY-x',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+
+    // // Enable this function while testing react-toastify
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //     console.log("button working!");
+    // };
+    
 
     return (
         <div className="main-contact">
@@ -69,20 +93,21 @@ const form = useRef();
                                 <form ref={form} onSubmit={sendEmail}>
                                     <Row>
                                         <Col size={12} sm={12} className="px-1">
-                                            <input type="text" name="user_name" placeholder="Full Name"/>
+                                            <input type="text" name="user_name" placeholder="Full Name" />
                                         </Col>
                                         <Col size={12} sm={12} className="px-1">
-                                            <input type="email" name="user_email" placeholder="Email Address"/>
+                                            <input type="email" name="user_email" placeholder="Email Address" />
                                         </Col>
                                         <Col size={12} className="px-1">
                                             <textarea rows="6" name="message" placeholder="Message"></textarea>
-                                            <button value="Send" type="submit"><span>Send Message</span></button>
-                                        </Col>
+                                            <button onClick={notify} value="Send" type="submit"><span>Send Message</span></button>
+                                        </Col>                                      
                                     </Row>
                                 </form>
                             </div>
                         </Col>
                     </Row>
+                  <ToastContainer />
                 </Container>
             </section>
         </div>
