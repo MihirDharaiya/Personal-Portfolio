@@ -14,12 +14,25 @@ import '../Contact/Contact.css';
 
 export const Contact = () => {
 
+    const [Disable, setDisable] = useState(false)
     const form = useRef();
 
     const notify = () => {
+
+        setDisable(true)
+
+        setTimeout(() => {
+            setDisable(false)
+
+        }, 10000)
+
+        // Form clearance logic Mk.1
+        document.getElementById("myForm").reset();
+
+        //react-toastify || promise function to be added
         toast.success('Message sent successfully!', {
             position: "bottom-right",
-            autoClose: 5000,
+            autoClose: 10000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -27,33 +40,42 @@ export const Contact = () => {
             progress: undefined,
             theme: "dark",
             transition: Bounce,
-            });
+            bodyStyle : {padding: "5px", marginInline: "10px", display: "flex", gap: "7px"},
+        });
+
+        // // Form clearance logic Mk.2
+        // console.log("FORM", form)
+        // form.current[0].value = ""
+        // form.current[1].value = ""
+        // form.current[2].value = ""
+
+
     };
 
     // Disable this function while testing react-toastify
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs
-            .sendForm('gmail_service', 'contactMeForm', form.current, {
-                publicKey: 'oUl30g-qhCSyzmY-x',
-            })
-            .then(
-                () => {
-                    console.log('SUCCESS!');
-                },
-                (error) => {
-                    console.log('FAILED...', error.text);
-                },
-            );
-    };
-
-    // // Enable this function while testing react-toastify
     // const sendEmail = (e) => {
     //     e.preventDefault();
-    //     console.log("button working!");
+
+    //     emailjs
+    //         .sendForm('gmail_service', 'contactMeForm', form.current, {
+    //             publicKey: 'oUl30g-qhCSyzmY-x',
+    //         })
+    //         .then(
+    //             () => {
+    //                 console.log('SUCCESS!');
+    //             },
+    //             (error) => {
+    //                 console.log('FAILED...', error.text);
+    //             },
+    //         );
     // };
-    
+
+    // Enable this function while testing react-toastify
+    const sendEmail = (e) => {
+        e.preventDefault();
+        console.log("button working!");
+    };
+
 
     return (
         <div className="main-contact">
@@ -90,7 +112,7 @@ export const Contact = () => {
                         </Col>
                         <Col size={12} md={6}>
                             <div className="card-form">
-                                <form ref={form} onSubmit={sendEmail}>
+                                <form id="myForm" ref={form} onSubmit={sendEmail}>
                                     <Row>
                                         <Col size={12} sm={12} className="px-1">
                                             <input type="text" name="user_name" placeholder="Full Name" />
@@ -98,16 +120,16 @@ export const Contact = () => {
                                         <Col size={12} sm={12} className="px-1">
                                             <input type="email" name="user_email" placeholder="Email Address" />
                                         </Col>
-                                        <Col size={12} className="px-1">
+                                        <Col size={12} className="px-1 ">
                                             <textarea rows="6" name="message" placeholder="Message"></textarea>
-                                            <button onClick={notify} value="Send" type="submit"><span>Send Message</span></button>
-                                        </Col>                                      
+                                            <button onClick={notify} disabled={Disable} value="Send" type="submit" style={Disable ? {backgroundColor : "black"} : {backgroundColor : "#4275FA"}}><span>Send Message</span></button>
+                                        </Col>
                                     </Row>
                                 </form>
                             </div>
                         </Col>
                     </Row>
-                  <ToastContainer />
+                    <ToastContainer />
                 </Container>
             </section>
         </div>
