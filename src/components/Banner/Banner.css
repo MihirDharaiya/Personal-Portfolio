@@ -65,6 +65,8 @@
 }
 
 .banner img {
+    width: 100%;
+    height: auto;
     margin-bottom: 10px;
     animation: updown 3s linear infinite;
 }

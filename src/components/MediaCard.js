@@ -41,7 +41,7 @@ export default function MediaCard({ title, imgUrl, description, urlLink }) {
             <CardMedia
                 component="img"
                 height="210"
-                style={{ width: "90%", borderRadius: "10px", margin: "20px" }}
+                style={{ width: "100%" }}
                 image={imgUrl}
                 alt="i'm gay!"
             // borderRadius="50px"
@@ -58,7 +58,7 @@ export default function MediaCard({ title, imgUrl, description, urlLink }) {
                     aria-expanded={expanded}
                     aria-label="show more"
                 >
-                    <ExpandMoreIcon />
+                    <ExpandMoreIcon style={{ color: "rgba(229, 85, 78, 1)" }} />
                 </ExpandMore>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>

@@ -34,17 +34,23 @@
     margin-top: 20px;
 }
 
+.footer img {
+    margin-top: 1.5%;
+}
+
 @media (max-width:768px) {
     .footer {
         justify-content: center;
         align-items: center;
         display: flex;
+        size: 5%;
     }
 
     .footer img {
         width: 12%;
-        justify-content: center;
-        display: flex;
-        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
+        /* transform: translate(360%); */
+        margin-top: 10px;
     }
 }

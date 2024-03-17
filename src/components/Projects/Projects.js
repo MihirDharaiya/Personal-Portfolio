@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import indus from "../../assets/img/indusuniapp.png";
+import airbnb from "../../assets/img/airbnb.png";
 import creatorit from "../../assets/img/creatorit.png";
-import projImg3 from "../../assets/img/D3.png";
+import mobile from "../../assets/img/mobile.png";
+import python from "../../assets/img/Python.png";
+import valorantstats from "../../assets/img/ValorantStatistics.png";
 import Datacamp1 from "../../assets/img/DataCamp1.png";
 import Datacamp2 from "../../assets/img/Datacamp2.png";
 import Datacamp3 from "../../assets/img/Datacamp3.png";
@@ -26,32 +29,33 @@ export const Projects = () => {
         {
             title: "Valorant Statistics",
             description: "This project is focused on the analysis of the the Airbnb's Real Estate Listings dataset which is avaiable on kaggle.",
-            imgUrl: projImg3,
+            imgUrl: valorantstats,
+            urlLink: "https://github.com/MihirDharaiya/Valorant-Statistics"
+        },
+        {
+            title: "Airbnb Real Estate Listings",
+            description: "This project is focused on the analysis of the the Airbnb's Real Estate Listings dataset which is avaiable on kaggle.",
+            imgUrl: airbnb,
+            urlLink: "https://github.com/MihirDharaiya/Airbnb-Real-Estate-Listings-Analysis"
         },
         {
             title: "IndusUniApp",
             description: "The project is dedicated to addressing students inquiries and enhancing transparency between faculty members and students. There has been an 80% reduction in resolution time. The applications involved are IndusAchiever, IndusFaculty, and AdminPortal.",
             imgUrl: indus,
+            urlLink: "https://github.com/MihirDharaiya/IndusUniApp"
         },
         {
             title: "Creator-IT",
             description: "Creator-IT is SEO optimisation and recommendation website for Youtubers, Instagram creators and other platforms creators. Helps content creators in generating video titles, hashtags and much more.",
             imgUrl: creatorit,
+            urlLink: "https://github.com/MihirDharaiya/creator_it"
         },
+
         {
-            title: "Dashboard",
-            description: "Churn Analysis",
-            imgUrl: projImg3,
-        },
-        {
-            title: "Creator-IT",
-            description: "Creator-IT is SEO optimisation and recommendation website for Youtubers, Instagram creators and other platforms creators. Helps content creators in generating video titles, hashtags and much more.",
-            imgUrl: creatorit,
-        },
-        {
-            title: "Creator-IT",
-            description: "Creator-IT is SEO optimisation and recommendation website for Youtubers, Instagram creators and other platforms creators. Helps content creators in generating video titles, hashtags and much more.",
-            imgUrl: creatorit,
+            title: "Mobile Price Prediction",
+            description: "",
+            imgUrl: mobile,
+            urlLink: "https://github.com/MihirDharaiya/Mobile-Price-Prediction/blob/main/Mobile%20Price%20Prediction.ipynb"
         },
 
     ];
@@ -88,10 +92,10 @@ export const Projects = () => {
             urlLink: "https://www.datacamp.com/completed/statement-of-accomplishment/course/4a2eea5342413daaeb48834c42e3f5912e055772"
         },
         {
-            title: "Google",
-            description: "Google Data Analytics",
-            imgUrl: google,
-            urlLink: "https://www.coursera.org/account/accomplishments/professional-cert/N59F8ZVJFUVR"
+            title: "University of Michigan",
+            description: "Python for Everybody (Getting Started with Python)",
+            imgUrl: python,
+            urlLink: "https://www.coursera.org/account/accomplishments/verify/SVHUDB7ZKBKL"
         },
 
     ];

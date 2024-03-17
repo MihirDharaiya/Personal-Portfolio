@@ -43,7 +43,7 @@ export const Education = () => {
                                     grad={"Graduation: 2025"}
                                     cgpa={"CGPA: 3.88"}
                                 />
-                                <div style={{ borderLeft: "2px solid #000", height: "100%", margin: "0 10px", opacity: 0.5 }}></div>
+                                <div className="line" style={{}}></div>
                                 <TransparentCard
                                     image={indus}
                                     title={"Indus University"}

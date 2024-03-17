@@ -36,6 +36,12 @@
     text-align: center;
 }
 
+.education-bx .line {
+    border-left: 2px solid #000;
+    height: 100%;
+    margin: 0 10px;
+    opacity: 0.5
+}
 
 .education p {
     color: #B8B8B8;
@@ -78,6 +84,11 @@
     .education-bx {
         background: rgba(229, 85, 78, 0.3);
         height: 600px;
+    }
+
+    .education-bx .line {
+        border-bottom: 1px solid black;
+        margin: 10px;
     }
 
     .globe {

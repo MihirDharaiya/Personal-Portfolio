@@ -26,28 +26,24 @@ export const About = () => {
                                 <br />
                                 <br />
                                 <br />
-                                <h4>My Hobby</h4>
+                                <h4>My Hobbies</h4>
                                 <Row>
-                                    <Col>
-                                        <div className="hobby-container">
-                                            <div className="stream-container">
-                                                <div className="element">
-                                                    <img className={"stream"} src={stream} alt="Contact Us" />
-                                                    <span>STREAMS</span>
-                                                </div>
-                                                <div className="element">
-                                                    <img className={"stream"} src={metro} alt="Contact Us" />
-                                                    <span>TRAVELLING</span>
-                                                </div>
-                                                <div className="element">
-                                                    <img className={"stream"} src={console} alt="Contact Us" />
-                                                    <span>GAMING</span>
-                                                </div>
+                                    <div className="hobby-container">
+                                        <div className="stream-container">
+                                            <div className="element">
+                                                <img className={"stream"} src={stream} alt="Contact Us" />
+                                                <span>STREAMS</span>
                                             </div>
-
+                                            <div className="element">
+                                                <img className={"stream"} src={metro} alt="Contact Us" />
+                                                <span>TRAVELLING</span>
+                                            </div>
+                                            <div className="element">
+                                                <img className={"stream"} src={console} alt="Contact Us" />
+                                                <span>GAMING</span>
+                                            </div>
                                         </div>
-
-                                    </Col>
+                                    </div>
                                 </Row>
                             </div>
                         </Col>
