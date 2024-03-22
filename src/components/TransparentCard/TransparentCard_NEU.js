@@ -1,7 +1,7 @@
 import React from 'react';
-import './TransparentCard.css'; // Import the CSS file for styling
+import './TransparentCard_NEU.css'; // Import the CSS file for styling
 
-const TransparentCard = ({ image, title, course, grad, cgpa }) => {
+const TransparentCard_NEU = ({ image, title, course, grad, cgpa }) => {
     return (
         <div className="transparent-card">
             <h5>{grad}</h5>
@@ -13,4 +13,4 @@ const TransparentCard = ({ image, title, course, grad, cgpa }) => {
     );
 };
 
-export default TransparentCard;
+export default TransparentCard_NEU;

@@ -50,7 +50,7 @@ export default function MediaCard({ title, imgUrl, description, urlLink }) {
             </CardContent>
             <CardActions disableSpacing>
                 <IconButton aria-label="add to favorites">
-                    <LaunchIcon style={{ color: "rgba(229, 85, 78, 1)" }} onClick={() => openInNewTab(urlLink)} />
+                    <LaunchIcon style={{ color: "#4275FA" }} onClick={() => openInNewTab(urlLink)} />
                 </IconButton>
                 <ExpandMore
                     expand={expanded}
@@ -58,7 +58,7 @@ export default function MediaCard({ title, imgUrl, description, urlLink }) {
                     aria-expanded={expanded}
                     aria-label="show more"
                 >
-                    <ExpandMoreIcon style={{ color: "rgba(229, 85, 78, 1)" }} />
+                    <ExpandMoreIcon style={{ color: "#4275FA" }} />
                 </ExpandMore>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>

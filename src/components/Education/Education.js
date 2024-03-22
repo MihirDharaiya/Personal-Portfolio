@@ -1,7 +1,8 @@
 import north from "../../assets/img/Northeastern.png";
-import indus from "../../assets/img/indus.png";
+import indus from "../../assets/img/indus copy.png";
 import 'react-multi-carousel/lib/styles.css';
-import TransparentCard from "../TransparentCard/TransparentCard";
+import TransparentCard_NEU from "../TransparentCard/TransparentCard_NEU";
+import TransparentCard_IITE from "../TransparentCard/TransparentCard_IITE";
 import globe from "../../assets/img/Globe2.svg";
 
 import '../Education/Education.css';
@@ -35,7 +36,7 @@ export const Education = () => {
                         <h2>Education</h2>
                         <div className="education-bx wow zoomIn">
                             <div className="direction">
-                                <TransparentCard
+                                <TransparentCard_NEU
                                     image={north}
                                     title={"Northeastern University"}
                                     course={"Master of Professional Studies in Analytics"}
@@ -44,10 +45,10 @@ export const Education = () => {
                                     cgpa={"CGPA: 3.88"}
                                 />
                                 <div className="line" style={{}}></div>
-                                <TransparentCard
+                                <TransparentCard_IITE
                                     image={indus}
                                     title={"Indus University"}
-                                    course={"B.Technology in Computer Science"}
+                                    course={"B.Tech in Computer Science & Engineering"}
 
                                     grad={"Graduation: 2023"}
                                     cgpa={"CGPA: 9.80"}

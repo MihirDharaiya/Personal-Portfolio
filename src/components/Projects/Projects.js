@@ -3,7 +3,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import indus from "../../assets/img/indusuniapp.png";
 import airbnb from "../../assets/img/airbnb.png";
 import creatorit from "../../assets/img/creatorit.png";
-import mobile from "../../assets/img/mobile.png";
+import mobile from "../../assets/img/mobile-phone-evolution.jpg";
 import python from "../../assets/img/Python.png";
 import valorantstats from "../../assets/img/ValorantStatistics.png";
 import Datacamp1 from "../../assets/img/DataCamp1.png";
@@ -30,7 +30,7 @@ export const Projects = () => {
             title: "Valorant Statistics",
             description: "This project is focused on the analysis of the the Airbnb's Real Estate Listings dataset which is avaiable on kaggle.",
             imgUrl: valorantstats,
-            urlLink: "https://github.com/MihirDharaiya/Valorant-Statistics"
+            urlLink: "https://app.powerbi.com/view?r=eyJrIjoiNGZiYWUyMjgtZmUyYS00NDY1LTlmYzgtNmY4MWYxMmVmYzUxIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9&pageName=ReportSection6b109e940a393b49ebe0"
         },
         {
             title: "Airbnb Real Estate Listings",
@@ -53,7 +53,7 @@ export const Projects = () => {
 
         {
             title: "Mobile Price Prediction",
-            description: "",
+            description: "Developed a Python-based Mobile Phone Price Prediction model for accurate forecasting of mobile phone prices, enhancing decision-making in the tech market.",
             imgUrl: mobile,
             urlLink: "https://github.com/MihirDharaiya/Mobile-Price-Prediction/blob/main/Mobile%20Price%20Prediction.ipynb"
         },
