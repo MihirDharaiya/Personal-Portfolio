@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import indus from "../../assets/img/indusuniapp.png";
 import airbnb from "../../assets/img/airbnb.png";
+import churn from "../../assets/img/ChurnAnalysis.png";
 import creatorit from "../../assets/img/creatorit.png";
 import mobile from "../../assets/img/mobile-phone-evolution.jpg";
 import python from "../../assets/img/Python.png";
@@ -28,9 +29,15 @@ export const Projects = () => {
     const projects = [
         {
             title: "Valorant Statistics",
-            description: "This project is focused on the analysis of the the Airbnb's Real Estate Listings dataset which is avaiable on kaggle.",
+            description: "The project is centered around analyzing a dataset within the gaming industry specifically focusing on Valorant. Its main objective is to utilize Microsoft Power BI skills to extract meaningful insights and information for publishers with a primary focus on the statistics of Valorant Champions Tour 2023. The analysis delves into providing insights concerning agents maps players and teams within the game.",
             imgUrl: valorantstats,
             urlLink: "https://app.powerbi.com/view?r=eyJrIjoiNGZiYWUyMjgtZmUyYS00NDY1LTlmYzgtNmY4MWYxMmVmYzUxIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9&pageName=ReportSection6b109e940a393b49ebe0"
+        },
+        {
+            title: "Customer Churn Analysis",
+            description: "This project aims to delve into customer churn within a company primarily operating in California. By analyzing different factors influencing customer attrition, we seek insights to guide strategic decision-making and improve efforts in retaining customers.",
+            imgUrl: churn,
+            urlLink: "https://github.com/MihirDharaiya/Telecom-Customer-Churn-Analysis"
         },
         {
             title: "Airbnb Real Estate Listings",
@@ -74,6 +81,12 @@ export const Projects = () => {
             urlLink: "https://www.coursera.org/account/accomplishments/professional-cert/N59F8ZVJFUVR"
         },
         {
+            title: "University of Michigan",
+            description: "Python for Everybody (Getting Started with Python)",
+            imgUrl: python,
+            urlLink: "https://www.coursera.org/account/accomplishments/verify/SVHUDB7ZKBKL"
+        },
+        {
             title: "DataCamp",
             description: "Data Analyst in Power BI",
             imgUrl: Datacamp1,
@@ -90,12 +103,6 @@ export const Projects = () => {
             description: "Intermediate R",
             imgUrl: Datacamp3,
             urlLink: "https://www.datacamp.com/completed/statement-of-accomplishment/course/4a2eea5342413daaeb48834c42e3f5912e055772"
-        },
-        {
-            title: "University of Michigan",
-            description: "Python for Everybody (Getting Started with Python)",
-            imgUrl: python,
-            urlLink: "https://www.coursera.org/account/accomplishments/verify/SVHUDB7ZKBKL"
         },
 
     ];

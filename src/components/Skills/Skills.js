@@ -87,7 +87,7 @@ export const Skills = () => {
                                         <h5>Microsoft Excel</h5>
                                     </div>
                                     <div className="item">
-                                        <img src={figma} style={{ height: 180, width: 140 }} alt="Image" />
+                                        <img src={figma} style={{ height: 180, width: 130 }} alt="Image" />
                                         <h5>Figma</h5>
                                     </div>
                                     <div className="item">

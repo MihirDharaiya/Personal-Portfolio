@@ -40,7 +40,7 @@ export const Contact = () => {
             progress: undefined,
             theme: "dark",
             transition: Bounce,
-            bodyStyle : {padding: "5px", marginInline: "10px", display: "flex", gap: "7px"},
+            bodyStyle: { padding: "5px", marginInline: "10px", display: "flex", gap: "7px" },
         });
 
         // // Form clearance logic Mk.2
@@ -53,28 +53,28 @@ export const Contact = () => {
     };
 
     // Disable this function while testing react-toastify
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-
-    //     emailjs
-    //         .sendForm('gmail_service', 'contactMeForm', form.current, {
-    //             publicKey: 'oUl30g-qhCSyzmY-x',
-    //         })
-    //         .then(
-    //             () => {
-    //                 console.log('SUCCESS!');
-    //             },
-    //             (error) => {
-    //                 console.log('FAILED...', error.text);
-    //             },
-    //         );
-    // };
-
-    // Enable this function while testing react-toastify
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log("button working!");
+
+        emailjs
+            .sendForm('gmail_service', 'contactMeForm', form.current, {
+                publicKey: 'oUl30g-qhCSyzmY-x',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
     };
+
+    // // Enable this function while testing react-toastify
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //     console.log("button working!");
+    // };
 
 
     return (
@@ -122,7 +122,7 @@ export const Contact = () => {
                                         </Col>
                                         <Col size={12} className="px-1 ">
                                             <textarea rows="6" name="message" placeholder="Message"></textarea>
-                                            <button onClick={notify} disabled={Disable} value="Send" type="submit" style={Disable ? {backgroundColor : "black"} : {backgroundColor : "#4275FA"}}><span>Send Message</span></button>
+                                            <button onClick={notify} disabled={Disable} value="Send" type="submit" style={Disable ? { backgroundColor: "black" } : { backgroundColor: "#4275FA" }}><span>Send Message</span></button>
                                         </Col>
                                     </Row>
                                 </form>
