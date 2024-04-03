@@ -16,49 +16,62 @@ export const Contact = () => {
 
     const [Disable, setDisable] = useState(false)
     const form = useRef();
-
-    const notify = () => {
-
-        setDisable(true)
+    
+    const refresh = () => {
 
         setTimeout(() => {
-            setDisable(false)
+            window.location.reload(false)
+            // // Form clearance logic Mk.1
+            // document.getElementById("myForm").reset();
+        }, 3000)        
 
-        }, 10000)
+    }
+    
+    // const notify = () => {
 
-        // Form clearance logic Mk.1
-        document.getElementById("myForm").reset();
-
-        //react-toastify || promise function to be added
-        toast.success('Message sent successfully!', {
-            position: "bottom-right",
-            autoClose: 10000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "dark",
-            transition: Bounce,
-            bodyStyle: { padding: "5px", marginInline: "10px", display: "flex", gap: "7px" },
-        });
-
-        // // Form clearance logic Mk.2
-        // console.log("FORM", form)
-        // form.current[0].value = ""
-        // form.current[1].value = ""
-        // form.current[2].value = ""
+    //     setDisable(true)
 
 
-    };
+    //     // // Form clearance logic Mk.2
+    //     // console.log("FORM", form)
+    //     // form.current[0].value = ""
+    //     // form.current[1].value = ""
+    //     // form.current[2].value = ""
+
+    //     // setTimeout(() => {
+    //     //     setDisable(false)
+    //     //     // Form clearance logic Mk.1
+    //     //     document.getElementById("myForm").reset();
+    //     // }, 10000)
+
+
+
+    //     //react-toastify || promise function to be added
+    //     toast.success('Message sent successfully!', {
+    //         position: "bottom-right",
+    //         autoClose: 10000,
+    //         hideProgressBar: false,
+    //         closeOnClick: true,
+    //         pauseOnHover: true,
+    //         draggable: true,
+    //         progress: undefined,
+    //         theme: "dark",
+    //         transition: Bounce,
+    //         bodyStyle : {padding: "5px", marginInline: "10px", display: "flex", gap: "7px"},
+    //     });
+
+
+
+
+    // };
 
     // Disable this function while testing react-toastify
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs
-            .sendForm('gmail_service', 'contactMeForm', form.current, {
-                publicKey: 'oUl30g-qhCSyzmY-x',
+            .sendForm('service_gj3ybvs', 'template_vxu05ax', form.current, {
+                publicKey: '3zcYLuFn-vqhR3Q5y',
             })
             .then(
                 () => {
@@ -70,7 +83,7 @@ export const Contact = () => {
             );
     };
 
-    // // Enable this function while testing react-toastify
+    // Enable this function while testing react-toastify
     // const sendEmail = (e) => {
     //     e.preventDefault();
     //     console.log("button working!");
@@ -122,7 +135,7 @@ export const Contact = () => {
                                         </Col>
                                         <Col size={12} className="px-1 ">
                                             <textarea rows="6" name="message" placeholder="Message"></textarea>
-                                            <button onClick={notify} disabled={Disable} value="Send" type="submit" style={Disable ? { backgroundColor: "black" } : { backgroundColor: "#4275FA" }}><span>Send Message</span></button>
+                                            <button onClick={refresh} value="Send" type="submit"><span>Send Message</span></button>
                                         </Col>
                                     </Row>
                                 </form>
