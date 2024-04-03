@@ -72,7 +72,7 @@ export const Projects = () => {
             title: "Microsoft",
             description: "Power BI Data Analyst Associate",
             imgUrl: pl300,
-            urlLink: "https://learn.microsoft.com/en-us/users/mihirdharaiya-5742/credentials/certification/data-analyst-associate?tab=credentials-tab"
+            urlLink: "https://learn.microsoft.com/api/credentials/share/en-us/MihirDharaiya-5742/AE7F431C82055942?sharingId=D134CEE25DFE5F7C"
         },
         {
             title: "Google",
