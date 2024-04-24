@@ -15,7 +15,7 @@ export const Banner = () => {
 
     const onDownloadClick = () => {
         // Replace 'your-pdf-url.pdf' with the actual URL of your PDF file
-        const pdfUrl = 'https://drive.google.com/file/d/1vkJ0JCSEOROcDicz4n3xO4JHQZ-fP79f/view?usp=sharing';
+        const pdfUrl = 'https://drive.google.com/file/d/1uMFQPugBWsYzG6kcpZMvTSCaucRBV56K/view?usp=sharing';
 
         // Create a link element
         const link = document.createElement('a');

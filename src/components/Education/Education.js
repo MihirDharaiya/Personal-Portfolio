@@ -42,7 +42,7 @@ export const Education = () => {
                                     course={"Master of Professional Studies in Analytics"}
 
                                     grad={"Graduation: 2025"}
-                                    cgpa={"CGPA: 3.88"}
+                                    cgpa={"GPA: 3.94"}
                                 />
                                 <div className="line" style={{}}></div>
                                 <TransparentCard_IITE
@@ -51,7 +51,7 @@ export const Education = () => {
                                     course={"B.Tech in Computer Science & Engineering"}
 
                                     grad={"Graduation: 2023"}
-                                    cgpa={"CGPA: 9.80"}
+                                    cgpa={"GPA: 3.94"}
                                 />
                             </div>
                         </div>
