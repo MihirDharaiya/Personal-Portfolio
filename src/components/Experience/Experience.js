@@ -27,12 +27,17 @@ export const Experience = () => {
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         icon={<IndusIcon />}
                     >
-                        <h4 className="vertical-timeline-element-title">Software Developer Intern</h4>
+                        <h4 className="vertical-timeline-element-title">Data Analyst Intern</h4>
                         <h5 className="vertical-timeline-element-subtitle">Indus University</h5>
                         <p>
-                            -Creator-IT functions as a platform designed to enhance SEO and offer personalized suggestions for individuals on YouTube, Instagram, and other diverse creator platforms.                            <br />
+                            Developed and implemented a multifunctional platform for social media creators, enabling them to optimize content strategy across YouTube, Twitter, and Instagram.
                             <br />
-                            -The project aimed to propose captivating titles, thumbnails, and hashtags with the goal of elevating engagement rates from 5-10% to 25-30%.                        </p>
+                            <br />
+                            Incorporated machine learning techniques for Twitter sentiment analysis, providing creators with valuable insights and increasing engagement by about 10%.
+                            <br />
+                            <br />
+                            Empowered creators to improve content and grow online presence by 8% with user-friendly trend analysis tools.
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -50,10 +55,14 @@ export const Experience = () => {
                         <h4 className="vertical-timeline-element-title">Teaching Assistant</h4>
                         <h5 className="vertical-timeline-element-subtitle">Coding Ninjas</h5>
                         <p>
-                            -Mentored students, resolving 500+ queries with a 4.7 rating.
+                            Guided students through the resolution of over 500 queries concerning Data Structures and Algorithms in JAVA.
                             <br />
                             <br />
-                            -Managed situations involving debugging, code optimization, enhanced time complexity, and elucidated approaches.
+                            Managed scenarios encompassing debugging, code enhancement, time complexity optimization, and explanation of
+                            methodologies with effective problem-solving skills.
+                            <br />
+                            <br />
+                            Received outstanding feedback, earning a rating of 4.7 out of 5 from students for effectively resolving queries.
 
                         </p>
                     </VerticalTimelineElement>
