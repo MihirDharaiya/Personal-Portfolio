@@ -4,6 +4,8 @@ import 'react-vertical-timeline-component/style.min.css';
 import '../Experience/Experience.css'
 import { IndusIcon } from "../IndusIcon";
 import { CodingNinjasIcon } from "../CodingNinjasIcon";
+import { RcisIcon } from "../RcisIcon";
+
 
 export const Experience = () => {
     return (
@@ -12,8 +14,31 @@ export const Experience = () => {
                 <div>
                     <h2>Experience</h2>
                 </div>
-
                 <VerticalTimeline lineColor="#4275FA">
+                <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{
+                            background: "rbga(53, 61, 219, 0.24)",
+                            color: '#4275FA',
+                            borderRadius: '10px',
+                            boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)"
+                        }}
+                        contentArrowStyle={{ borderRight: '7px solid  rbga(53, 61, 219, 0.24)' }}
+                        date="Sep 2021 - Jan 2022"
+                        iconStyle={{ alignItems: 'center', background: 'white', justifyContent: 'center' }}
+                        icon={<RcisIcon/>}
+                    >
+                        <h4 className="vertical-timeline-element-title">Student Data Analyst</h4>
+                        <h5 className="vertical-timeline-element-subtitle">Royal Canadian Institute for Science</h5>
+                        <p>
+                        Led a cross-functional team to design and implement an ETL data migration architecture from Universal Analytics to Google Analytics 4, ensuring seamless data tracking continuity and improving data accuracy by 25%.                            <br />
+                            <br />
+                            Evaluated social network traffic data in depth and leveraged data-driven insights to enhance the social media content strategy, driving a 30% increase in website traffic.
+                            <br />
+                            <br />
+                            Developed comprehensive data reports in Tableau by conducting Exploratory Data Analysis (EDA), delivering actionable insights and practical recommendations that aligned with key business goals.
+                        </p>
+                    </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{
@@ -30,14 +55,14 @@ export const Experience = () => {
                         <h4 className="vertical-timeline-element-title">Data Analyst Intern</h4>
                         <h5 className="vertical-timeline-element-subtitle">Indus University</h5>
                         <p>
-                            Developed and implemented a multifunctional platform for social media creators, enabling them to optimize content strategy across YouTube, Twitter, and Instagram.
+                        Directed the development of a versatile platform for social media creators, addressing the challenge of enhancing content strategy across YouTube, Twitter, and Instagram, successfully meeting business requirements.
+                        <br />
+                            <br />
+                            Implemented machine learning techniques for Twitter sentiment analysis using Python, automating insight generation for creators, leading to a 10% increase in engagement and demonstrating proficiency in advanced analytics.
                             <br />
                             <br />
-                            Incorporated machine learning techniques for Twitter sentiment analysis, providing creators with valuable insights and increasing engagement by about 10%.
-                            <br />
-                            <br />
-                            Empowered creators to improve content and grow online presence by 8% with user-friendly trend analysis tools.
-                        </p>
+                            Facilitated creators growth by designing user-friendly Power BI dashboards, enabling them to independently enhance content, resulting in an 8% increase in online presence.
+                            </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -55,14 +80,13 @@ export const Experience = () => {
                         <h4 className="vertical-timeline-element-title">Teaching Assistant</h4>
                         <h5 className="vertical-timeline-element-subtitle">Coding Ninjas</h5>
                         <p>
-                            Guided students through the resolution of over 500 queries concerning Data Structures and Algorithms in JAVA.
+                        Mentored over 500 students in resolving complex inquiries related to Data Structures and Algorithms in Java, showcasing strong domain expertise and communication skills.
+                        <br />
+                            <br />
+                            Managed challenging debugging and optimization scenarios, improving code efficiency and problem-solving approaches, while fostering a learning-focused environment.
                             <br />
                             <br />
-                            Managed scenarios encompassing debugging, code enhancement, time complexity optimization, and explanation of
-                            methodologies with effective problem-solving skills.
-                            <br />
-                            <br />
-                            Received outstanding feedback, earning a rating of 4.7 out of 5 from students for effectively resolving queries.
+                            Earned a 4.7/5 rating for consistently delivering high-quality assistance, demonstrating active listening, problem resolution, and clear communication skills.
 
                         </p>
                     </VerticalTimelineElement>

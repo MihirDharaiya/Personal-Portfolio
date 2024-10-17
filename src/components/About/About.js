@@ -21,30 +21,22 @@ export const About = () => {
                             <div>
                                 <h2>About Me</h2>
                                 <p>
-                                    Dedicated data enthusiast with a knack for transforming raw data into actionable insights. Proficient in statistical analysis, data visualization, and machine learning. I'm passionate about solving complex problems through data-driven decision-making. In addition to this, I am a major fan of esports. I enjoy playing first-person shooter games and learning about this expanding sector, which will soon rule the world. Let's connect to explore the exciting intersection of data analytics and esports!
+                                👋 Hello! I'm a 🎯 Data Enthusiast, passionate about transforming raw data into actionable insights.
+                                <br/>
+                                <br/>
+                                I've applied these skills in real-world projects, like predicting subway delays to improve commuter experience by 15% and creating a Power BI dashboard that reduced player scouting time by 8% in the gaming industry.
+                                <br/>
+                                <br/>
+💡 My experience with Google Analytics 4 and social media analytics highlights my ability to leverage cutting-edge tools for impactful insights. I've successfully led data migration projects, improving data accuracy by 25%, and developed strategies that increased website traffic by 30%.
+<br/>
+<br/>
+
+Let's connect to explore how we can drive your business success with data-driven strategies and actionable insights!
                                 </p>
                                 <br />
                                 <br />
                                 <br />
-                                <h4>My Hobbies</h4>
-                                <Row>
-                                    <div className="hobby-container">
-                                        <div className="stream-container">
-                                            <div className="element">
-                                                <img className={"stream"} src={stream} alt="Contact Us" />
-                                                <span>STREAMS</span>
-                                            </div>
-                                            <div className="element">
-                                                <img className={"stream"} src={metro} alt="Contact Us" />
-                                                <span>TRAVELLING</span>
-                                            </div>
-                                            <div className="element">
-                                                <img className={"stream"} src={console} alt="Contact Us" />
-                                                <span>GAMING</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Row>
+                                
                             </div>
                         </Col>
                     </Row>

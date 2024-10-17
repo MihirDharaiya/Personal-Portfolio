@@ -7,6 +7,8 @@ import creatorit from "../../assets/img/creatorit.png";
 import mobile from "../../assets/img/mobile-phone-evolution.jpg";
 import python from "../../assets/img/Python.png";
 import valorantstats from "../../assets/img/ValorantStatistics.png";
+import gitflux from "../../assets/img/gitflux.png";
+import ttc from "../../assets/img/ttc.webp";
 import Datacamp1 from "../../assets/img/DataCamp1.png";
 import Datacamp2 from "../../assets/img/Datacamp2.png";
 import Datacamp3 from "../../assets/img/Datacamp3.png";
@@ -29,8 +31,20 @@ export const Projects = () => {
     const projects = [
         {
             title: "Valorant Statistics",
-            description: "The project is centered around analyzing a dataset within the gaming industry specifically focusing on Valorant. Its main objective is to utilize Microsoft Power BI skills to extract meaningful insights and information for publishers with a primary focus on the statistics of Valorant Champions Tour 2023. The analysis delves into providing insights concerning agents maps players and teams within the game.",
+            description: "Built a Power BI dashboard that reduced player scouting time by 8%, providing real-time insights on player statistics across agents and maps based on past tournament data. Analyzed a dataset of over 80,000 entries with diverse variables, offering comprehensive insights into player performance and strategic decisions.",
             imgUrl: valorantstats,
+            urlLink: "https://app.powerbi.com/view?r=eyJrIjoiNGZiYWUyMjgtZmUyYS00NDY1LTlmYzgtNmY4MWYxMmVmYzUxIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9&pageName=ReportSection6b109e940a393b49ebe0"
+        },
+        {
+            title: "TTC Subway Delay Prediction",
+            description: "Designed a platform using supervised machine learning techniques to predict subway delays, improving the commuter experience in Toronto by 15%. Executed ETL processes and conducted Exploratory Data Analysis (EDA) using Python and SQL, uncovering critical patterns that enhanced insights into delay factors.",
+            imgUrl: ttc,
+            urlLink: "https://github.com/MihirDharaiya/TTC-Subway-Delay-Prediction"
+        },
+        {
+            title: "GitFlux",
+            description: "Optimized GitHub account switching with a command-line app with seamless integration into npm, reducing manual switch time by 50% through an intuitive menu and safeguards for default accounts.",
+            imgUrl: gitflux,
             urlLink: "https://app.powerbi.com/view?r=eyJrIjoiNGZiYWUyMjgtZmUyYS00NDY1LTlmYzgtNmY4MWYxMmVmYzUxIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9&pageName=ReportSection6b109e940a393b49ebe0"
         },
         {
