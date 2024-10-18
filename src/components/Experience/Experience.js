@@ -24,7 +24,7 @@ export const Experience = () => {
                             boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)"
                         }}
                         contentArrowStyle={{ borderRight: '7px solid  rbga(53, 61, 219, 0.24)' }}
-                        date="Sep 2021 - Jan 2022"
+                        date="Apr 2024 - Jun 2024"
                         iconStyle={{ alignItems: 'center', background: 'white', justifyContent: 'center' }}
                         icon={<RcisIcon/>}
                     >

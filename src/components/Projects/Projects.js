@@ -45,7 +45,13 @@ export const Projects = () => {
             title: "GitFlux",
             description: "Optimized GitHub account switching with a command-line app with seamless integration into npm, reducing manual switch time by 50% through an intuitive menu and safeguards for default accounts.",
             imgUrl: gitflux,
-            urlLink: "https://app.powerbi.com/view?r=eyJrIjoiNGZiYWUyMjgtZmUyYS00NDY1LTlmYzgtNmY4MWYxMmVmYzUxIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9&pageName=ReportSection6b109e940a393b49ebe0"
+            urlLink: "https://github.com/MihirDharaiya/gitflux"
+        },
+        {
+            title: "Creator-IT",
+            description: "Creator-IT is SEO optimisation and recommendation website for Youtubers, Instagram creators and other platforms creators. Helps content creators in generating video titles, hashtags and much more.",
+            imgUrl: creatorit,
+            urlLink: "https://github.com/MihirDharaiya/creator_it"
         },
         {
             title: "Customer Churn Analysis",
@@ -65,13 +71,6 @@ export const Projects = () => {
             imgUrl: indus,
             urlLink: "https://github.com/MihirDharaiya/IndusUniApp"
         },
-        {
-            title: "Creator-IT",
-            description: "Creator-IT is SEO optimisation and recommendation website for Youtubers, Instagram creators and other platforms creators. Helps content creators in generating video titles, hashtags and much more.",
-            imgUrl: creatorit,
-            urlLink: "https://github.com/MihirDharaiya/creator_it"
-        },
-
         {
             title: "Mobile Price Prediction",
             description: "Developed a Python-based Mobile Phone Price Prediction model for accurate forecasting of mobile phone prices, enhancing decision-making in the tech market.",
