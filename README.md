@@ -1,54 +1,47 @@
-# Personal Portfolio Website
+<div align="center">
+<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
+</div>
 
-Welcome to my personal portfolio website! This project is created using React and showcases my skills, projects, and experiences as a data analyst.
+# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
 
-## Table of Contents
-- [About](#about)
-- [Skills](#skills)
-- [Experience](#experience)
-- [Projects](#projects)
-- [Certifications](#certifications)
-- [Education](#education)
-- [Contact](#contact)
+Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
 
-## About
-This project serves as my online resume and portfolio, where I display my projects, skills, and experiences. It's designed to be visually appealing, user-friendly, and informative.
+# Features
 
-## Features
-- **Responsive Design:** The website is designed to be accessible on various devices, including desktops, tablets, and mobile phones.
-- **Project Showcase:** Display your projects with descriptions, links, and images.
-- **Skills Section:** Highlight your skills and technologies you're proficient in.
-- **About Me:** Provide a brief introduction about yourself and your background.
-- **Contact Form:** Allow visitors to reach out to you via a contact form.
+- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
+- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
+- Includes a blog
+- Responsive for different devices
+- Optimized for Next.js and Vercel
 
-## Technologies Used
-- React
-- HTML/CSS
-- JavaScript
+# Getting Started Locally
 
-## Setup
-To run this project locally, follow these steps:
+1. Clone this repository to your local machine:
 
-1. Clone the repository: `git clone https://github.com/MihirDharaiya/Personal-Portfolio.git`
-2. Navigate to the project directory: `cd Personal-Portfolio`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
-5. Open your browser and visit `http://localhost:3000`
+   ```bash
+   git clone https://github.com/dillionverma/portfolio
+   ```
 
-## Usage
-Customize the content of the website according to your preferences and needs. Update the project showcase, skills section, about me, and contact information to reflect your own.
+2. Move to the cloned directory
 
-You can also modify the styling, layout, and functionality to match your personal brand and design preferences.
+   ```bash
+   cd portfolio
+   ```
 
-## Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+3. Install dependencies:
 
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/my-feature`
-3. Make your changes and commit them: `git commit -am 'Add new feature'`
-4. Push to the branch: `git push origin feature/my-feature`
-5. Submit a pull request.
+   ```bash
+   pnpm install
+   ```
 
----
+4. Start the local Server:
 
-Feel free to reach out if you have any questions, feedback, or suggestions!
+   ```bash
+   pnpm dev
+   ```
+
+5. Open the [Config file](./src/data/resume.tsx) and make changes
+
+# License
+
+Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
