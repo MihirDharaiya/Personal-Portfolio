@@ -8,7 +8,7 @@ const GoogleAnalytics = () => {
     <>
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-FRQMV67KR6"
+        src="https://www.googletagmanager.com/gtag/js?id=G-JMQD33VTYP"
       />
       <Script
         id="google-analytics"
@@ -18,7 +18,7 @@ const GoogleAnalytics = () => {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-FRQMV67KR6');
+            gtag('config', 'G-JMQD33VTYP');
           `,
         }}
       />
