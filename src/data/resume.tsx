@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Data enthusiast skilled in statistical analysis, data visualization, and machine learning.",
   summary:
-  "👋 Hello! I'm a 🎯 Data Enthusiast, passionate about transforming raw data into actionable insights.I've applied these skills in real-world projects, like predicting subway delays to improve commuter experience by 15% and creating a Power BI dashboard that reduced player scouting time by 8% in the gaming industry.💡 My experience with Google Analytics 4 and social media analytics highlights my ability to leverage cutting-edge tools for impactful insights. I've successfully led data migration projects, improving data accuracy by 25%, and developed strategies that increased website traffic by 30%.Let's connect to explore how we can drive your business success with data-driven strategies and actionable insights!",
+  "👋 Hello! I'm a 🎯 Data Enthusiast with a passion for transforming raw data into actionable insights. I specialize in using analytics to drive meaningful solutions, with experience in diverse projects like predictive modeling, dashboard creation, and data migration. Let’s connect to explore how data-driven strategies can elevate your business!",
   avatarUrl: "/m.jpeg",
   skills: [
     "Python",
@@ -149,6 +149,11 @@ export const DATA = {
           type: "Dashboard",
           href: "https://app.powerbi.com/view?r=eyJrIjoiNGZiYWUyMjgtZmUyYS00NDY1LTlmYzgtNmY4MWYxMmVmYzUxIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9&pageName=ReportSection6b109e940a393b49ebe0",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/MihirDharaiya/Valorant-Statistics",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/ValorantStatistics.png",
@@ -334,13 +339,12 @@ export const DATA = {
     // },
     {
       title: "Walmart Hackathon",
-      dates: "September 14th - 16th, 2018",
+      dates: "October 12th - 13th, 2023",
       location: "Toronto, Ontario",
       description:
-        "",
+        "We proposed a model to prioritize store space allocation based on department sales efficiency and availability, addressing Walmart's challenge of reducing store size while maximizing product display to enhance product visibility in compact layouts.",
       image:
         "/Northeastern.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
     // {
