@@ -19,6 +19,7 @@ interface ResumeCardProps {
   period: string;
   description?: string;
 }
+
 export const ResumeCard = ({
   logoUrl,
   altText,
@@ -37,6 +38,13 @@ export const ResumeCard = ({
       setIsExpanded(!isExpanded);
     }
   };
+
+  // Split the description into bullet points while preserving numbers like "4.7/5"
+  const splitDescription = (desc: string) => {
+    return desc.split(/(?<!\d)\.(?!\d)/).map((point) => point.trim()).filter(Boolean);
+  };
+
+  const points = description ? splitDescription(description) : [];
 
   return (
     <Link
@@ -91,16 +99,19 @@ export const ResumeCard = ({
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 text-xs sm:text-sm text-justify"
             >
-              {description}
+              <ul className="list-disc ml-4">
+                {points.map((point, index) => (
+                  <li key={index}>{point.endsWith(".") ? point : `${point}.`}</li>
+                ))}
+              </ul>
             </motion.div>
           )}
         </div>

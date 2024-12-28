@@ -120,7 +120,7 @@ export const DATA = {
       school: "Northeastern University",
       href: "https://www.northeastern.edu/",
       degree: "Master of Professional Studies in Analytics",
-      logoUrl: "/northeastern.png",
+      logoUrl: "/northeastern.webp",
       start: "2023",
       end: "2025",
     },
@@ -310,17 +310,17 @@ export const DATA = {
     },
   ],
   hackathons: [
-    // {
-    //   title: "Data for Good",
-    //   dates: "November 6th - 7th, 2024",
-    //   location: "Toronto, Ontario",
-    //   description:
-    //     "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-    //   image:
-    //     "/Northeastern.png",
-    //   mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-    //   links: [],
-    // },
+    {
+      title: "Telus Data for Good",
+      dates: "November 6th - 7th, 2024",
+      location: "Toronto, Ontario",
+      description:
+        "Developed a machine learning model to predict traffic congestion during the Taylor Swift Eras Tour in downtown areas. The model identified high-risk zones for congestion and provided actionable recommendations for traffic management, enhancing the flow and minimizing delays during the event",
+      image:
+        "/Northeastern.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [],
+    },
     // {
     //   title: "ETH Toronto",
     //   dates: "August 13th - 15th, 2024",
