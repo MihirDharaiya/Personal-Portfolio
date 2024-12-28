@@ -1,47 +1,13 @@
 <div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
 </div>
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+# Welcome to My Portfolio
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+Websie Link : [https://mihirdharaiya.com/](https://mihirdharaiya.com/)
 
-# Features
-
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
-
-# Getting Started Locally
-
-1. Clone this repository to your local machine:
-
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
-
-2. Move to the cloned directory
-
-   ```bash
-   cd portfolio
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   pnpm install
-   ```
-
-4. Start the local Server:
-
-   ```bash
-   pnpm dev
-   ```
-
-5. Open the [Config file](./src/data/resume.tsx) and make changes
-
-# License
-
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+<img width="687" alt="Screenshot 2024-12-28 at 12 07 04 PM" src="https://github.com/user-attachments/assets/7536eca6-86e5-4e98-96a0-76e198117c2c" />
+<img width="687" alt="Screenshot 2024-12-28 at 12 07 40 PM" src="https://github.com/user-attachments/assets/a37ed6cc-97c2-41f4-a0b9-72c8aa0c473c" />
+<img width="687" alt="Screenshot 2024-12-28 at 12 09 09 PM" src="https://github.com/user-attachments/assets/8acca778-c11c-4fd5-970e-f49f2d4b50dd" />
+<img width="687" alt="Screenshot 2024-12-28 at 12 09 40 PM" src="https://github.com/user-attachments/assets/b3eceb5b-a3b8-438d-92bc-382411fa9335" />
+<img width="687" alt="Screenshot 2024-12-28 at 12 09 58 PM" src="https://github.com/user-attachments/assets/d972175b-b318-469a-af3b-ec33aea4471a" />
+<img width="687" alt="Screenshot 2024-12-28 at 12 10 21 PM" src="https://github.com/user-attachments/assets/7fc5d29e-1732-4312-a9b3-a74061597edd" />
