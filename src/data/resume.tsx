@@ -120,7 +120,7 @@ export const DATA = {
       school: "Northeastern University",
       href: "https://www.northeastern.edu/",
       degree: "Master of Professional Studies in Analytics",
-      logoUrl: "/northeastern.webp",
+      logoUrl: "/Northeastern.webp",
       start: "2023",
       end: "2025",
     },
