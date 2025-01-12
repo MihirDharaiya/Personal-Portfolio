@@ -85,7 +85,7 @@ export const DATA = {
       badges: [],
       location: "Toronto",
       title: "Market Analyst Co-op",
-      logoUrl: "/lcl.png",
+      logoUrl: "/LCL.png",
       start: "January 2025",
       end: "Current",
       description:
