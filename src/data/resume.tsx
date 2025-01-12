@@ -205,7 +205,7 @@ export const DATA = {
   projects: [
     {
       title: "Valorant Statistics",
-      href: "https://app.powerbi.com/view?r=eyJrIjoiNGZiYWUyMjgtZmUyYS00NDY1LTlmYzgtNmY4MWYxMmVmYzUxIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9&pageName=ReportSection6b109e940a393b49ebe0",
+      href: "https://github.com/MihirDharaiya/Valorant-Statistics",
       active: true,
       description:
         "Built a Power BI dashboard that reduced player scouting time by 8%, providing real-time insights on player statistics across agents and maps based on past tournament data. Analyzed a dataset of over 80,000 entries with diverse variables, offering comprehensive insights into player performance and strategic decisions.",
@@ -214,11 +214,6 @@ export const DATA = {
         "Microsoft Excel",
       ],
       links: [
-        {
-          type: "Dashboard",
-          href: "https://app.powerbi.com/view?r=eyJrIjoiNGZiYWUyMjgtZmUyYS00NDY1LTlmYzgtNmY4MWYxMmVmYzUxIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9&pageName=ReportSection6b109e940a393b49ebe0",
-          icon: <Icons.globe className="size-3" />,
-        },
         {
           type: "Source",
           href: "https://github.com/MihirDharaiya/Valorant-Statistics",
