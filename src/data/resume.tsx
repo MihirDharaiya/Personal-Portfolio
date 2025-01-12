@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { Certificate } from "crypto";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
@@ -34,7 +35,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    //{ href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "mdharaiya800@gmail.com",
@@ -78,6 +79,18 @@ export const DATA = {
   },
 
   work: [
+    {
+      company: "Loblaw Companies Limited",
+      href: "https://www.loblaw.ca/",
+      badges: [],
+      location: "Toronto",
+      title: "Market Analyst Co-op",
+      logoUrl: "/lcl.png",
+      start: "January 2025",
+      end: "Current",
+      description:
+      ""
+    },
     {
       company: "Royal Canadian Insitute for Science",
       href: "https://www.rciscience.ca/",
@@ -132,6 +145,62 @@ export const DATA = {
       start: "2019",
       end: "2023",
     },
+  ],
+  certifications: [
+    {
+      title: "Power BI Data Analyst Associate",
+      href: "https://learn.microsoft.com/en-us/users/mihirdharaiya-5742/credentials/certification/data-analyst-associate?tab=credentials-tab",
+      active: true,
+      description: "Microsoft",
+      links: [
+        {
+          type: "Microsoft",
+          href: "https://learn.microsoft.com/en-us/users/mihirdharaiya-5742/credentials/certification/data-analyst-associate?tab=credentials-tab",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/pl300.png",
+    },
+    {
+      title: "Google Data Analytics",
+      href: "https://www.coursera.org/account/accomplishments/specialization/N59F8ZVJFUVR",
+      active: true,
+      links: [
+        {
+          type: "Coursera",
+          href: "https://www.coursera.org/account/accomplishments/specialization/N59F8ZVJFUVR",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/coursera.png",
+    },
+    {
+      title: "The Ultimate MySQL Bootcamp",
+      href: "https://www.udemy.com/certificate/UC-7c9e5e4a-3db8-4a61-9062-8ba78ecc41e2/",
+      active: true,
+      links: [
+        {
+          type: "Udemy",
+          href: "https://www.udemy.com/certificate/UC-7c9e5e4a-3db8-4a61-9062-8ba78ecc41e2/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/sql.png",
+    },
+    {
+      title: "Introduction to R",
+      href: "https://www.datacamp.com/completed/statement-of-accomplishment/course/a88ab67cfc600f069bdde176cac62c5495658b0f",
+      active: true,
+      links: [
+        {
+          type: "Datacamp",
+          href: "https://www.datacamp.com/completed/statement-of-accomplishment/course/a88ab67cfc600f069bdde176cac62c5495658b0f",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/r.png",
+    },
+    
   ],
   projects: [
     {
