@@ -87,9 +87,9 @@ export const DATA = {
       title: "Market Analyst Co-op",
       logoUrl: "/LCL.png",
       start: "January 2025",
-      end: "Current",
+      end: "April 2025",
       description:
-      ""
+      "Leveraged Python and Large Language Models (LLMs) to automate web scraping and data cleaning for competitor price matching, significantly improving accuracy and operational efficiency. Conducted SQL analysis to uncover trends for category teams, enabling a strategic $3M+ beverage partnership. Analyzed customer purchasing behavior and generated product recommendations using SQL, enabling pricing strategies that boosted sales and enhanced engagement. Optimized complex Excel-based tools by refactoring VBA scripts, reducing computation time from 20+ minutes to under 1 minute and accelerating decision-making for the merchandising team. Skills: Python, LLMs, SQL, Excel, VBA, Macros, Git, Data Analysis, Retail Analytics, Automation"
     },
     {
       company: "Royal Canadian Insitute for Science",
@@ -101,7 +101,7 @@ export const DATA = {
       start: "April 2024",
       end: "June 2024",
       description:
-        "Led a cross-functional team to design and implement an ETL data migration architecture from Universal Analytics to Google Analytics 4, ensuring seamless data tracking continuity and improving data accuracy by 25%.Evaluated social network traffic data in depth and leveraged data-driven insights to enhance the social media content strategy, driving a 30% increase in website traffic.Developed comprehensive data reports in Tableau by conducting Exploratory Data Analysis (EDA), delivering actionable insights and practical recommendations that aligned with key business goals.",
+      "Directed a cross-functional initiative to migrate analytics infrastructure from Universal Analytics to Google Analytics 4, improving tracking accuracy by 25%. Evaluated web traffic and social engagement data, deriving insights that informed content strategy and drove a 30% increase in website traffic. Produced actionable dashboards and visual reports in Tableau through robust EDA, aligning recommendations with strategic business objectives. Skills: Google Analytics 4, Tableau, EDA, Python, SQL, Data Visualization, Social Media Analytics"
     },
     {
       company: "Indus University",
@@ -113,7 +113,7 @@ export const DATA = {
       start: "June 2022",
       end: "August 2022",
       description:
-        "Directed the development of a versatile platform for social media creators, addressing the challenge of enhancing content strategy across YouTube, Twitter, and Instagram, successfully meeting business requirements.Implemented machine learning techniques for Twitter sentiment analysis using Python, automating insight generation for creators, leading to a 10% increase in engagement and demonstrating proficiency in advanced analytics.Facilitated creators growth by designing user-friendly Power BI dashboards, enabling them to independently enhance content, resulting in an 8% increase in online presence.",
+      "Spearheaded the development of a performance tracking platform for social media creators across YouTube, Twitter, and Instagram, enabling enhanced content strategies. Applied machine learning models for Twitter sentiment analysis using Python, automating insight generation and improving creator engagement by 10%. Designed interactive Power BI dashboards that empowered users to self-monitor performance, resulting in an 8% increase in online visibility. Skills: Python, Power BI, Machine Learning, Sentiment Analysis, Social Media Analytics, SQL"
     },
     {
       company: "Coding Ninjas",
@@ -203,6 +203,33 @@ export const DATA = {
     
   ],
   projects: [
+    {
+      title: "SyncScribe AI",
+      href: "https://github.com/aryan-michael/syncscribe-ai",
+      active: true,
+      description:
+      "Transform your meetings into actionable insights with AI-powered transcription summaries and intelligent analysis.",
+      technologies: [
+        "Python",
+        "Large Language Model(LLMs)",
+        "Cohere API",
+        "Google Speech-to-Text API",
+        "Vertex AI",
+        "Gemini",
+        "Next.js",
+        "Flask"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/aryan-michael/syncscribe-ai",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/syncscribe.png",
+      // video:
+      //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+    },
     {
       title: "Valorant Statistics",
       href: "https://github.com/MihirDharaiya/Valorant-Statistics",
@@ -374,6 +401,17 @@ export const DATA = {
     },
   ],
   hackathons: [
+    {
+      title: "GenAI Genesis 2025",
+      dates: "March 21st - 23rd, 2025",
+      location: "Toronto, Ontario",
+      description:
+      "Built a tool that transforms meetings into actionable insights using AI-powered transcription, smart summaries, and intelligent analysis.",
+      image:
+        "/genai.svg",
+      mlh: "https://genaigenesis.ca/",
+      links: [],
+    },
     {
       title: "Telus Data for Good",
       dates: "November 6th - 7th, 2024",

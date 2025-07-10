@@ -56,7 +56,7 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 5}>
   <div className="flex justify-start mt-4">
     <Link
-      href="/MihirDharaiya_25.pdf"
+      href="/MihirDharaiya.pdf"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center px-4 py-2 text-sm font-medium text-black border border-black bg-transparent hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 dark:text-white dark:border-white dark:hover:bg-gray-700 dark:focus:ring-white rounded-md"
