@@ -13,8 +13,9 @@ const GoogleAnalytics = () => {
     // Debug logging
     if (process.env.NODE_ENV === 'development') {
       console.log('Google Analytics Tracking ID:', GA_TRACKING_ID)
+      console.log('Current pathname:', pathname)
     }
-  }, [])
+  }, [pathname])
 
   // Track page views when route changes
   useEffect(() => {
@@ -36,11 +37,11 @@ const GoogleAnalytics = () => {
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         onLoad={() => {
           if (process.env.NODE_ENV === 'development') {
-            console.log('Google Analytics script loaded successfully')
+            console.log('✅ Google Analytics script loaded successfully')
           }
         }}
         onError={() => {
-          console.error('Failed to load Google Analytics script')
+          console.error('❌ Failed to load Google Analytics script')
         }}
       />
       <Script
@@ -55,11 +56,14 @@ const GoogleAnalytics = () => {
               page_title: document.title,
               page_location: window.location.href,
               send_page_view: true,
+              debug_mode: ${process.env.NODE_ENV === 'development' ? 'true' : 'false'}
             });
             
             // Debug logging in development
             if (process.env.NODE_ENV === 'development') {
-              console.log('Google Analytics initialized with ID:', '${GA_TRACKING_ID}');
+              console.log('✅ Google Analytics initialized with ID:', '${GA_TRACKING_ID}');
+              console.log('📍 Current URL:', window.location.href);
+              console.log('📄 Page Title:', document.title);
             }
           `,
         }}
