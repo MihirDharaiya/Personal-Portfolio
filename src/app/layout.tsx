@@ -8,6 +8,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from '../components/GoogleAnalytics';
 import {Analytics} from '@vercel/analytics/react';
+import AnalyticsTest from '../components/analytics-test';
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -68,6 +69,7 @@ export default function RootLayout({
             {children}
             <GoogleAnalytics />
             <Analytics />
+            <AnalyticsTest />
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
